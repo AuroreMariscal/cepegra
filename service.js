@@ -29,10 +29,10 @@ if (workbox) {
             "url": "manifest.json"
         },
         {
-            "url": "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            "url": "icon-96-96.png"
         },
         {
-            "url": "icon-96-96.png"
+            "url": "favicon.ico"
         },
     ])
   } else {
