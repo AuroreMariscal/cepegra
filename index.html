@@ -25,20 +25,25 @@
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#00D1B2">
   <title>PWA - Cepegra</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Hello world</h1>
-  <nav>
+  <a href="" class="button is-danger install hidden">Installer</a>
+  <div class="content">
+      <h1 class="title">Hello world</h1>
+  <nav class="navbar is-primary">
     <ul>
-      <li><a href="" class="test">Lien 1</a></li>
-      <li><a href="" class="test">Lien 2</a></li>
-      <li><a href="" class="test">Lien 3</a></li>
+      <li><a href="" class="navbar-item is-active">Lien 1</a></li>
+      <li><a href="" class="navbar-item">Lien 2</a></li>
+      <li><a href="" class="navbar-item">Lien 3</a></li>
     </ul>
   </nav>
   <img class="google" src="google.png" alt="">
+  </div>
 </body>
 <script src="sw-register.js"></script>
+<script src="install.js"></script>
 
 </html>
