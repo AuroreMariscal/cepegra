@@ -22,3 +22,6 @@ li::before{
     content: ">";
     margin-right: 0.5rem;
 }
+.google{
+    max-width: 10rem;
+}
