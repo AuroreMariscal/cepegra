@@ -7,5 +7,9 @@ self.addEventListener("install", event => {
 
 self.addEventListener("activate", event => {
     console.log("WS Worked is activated " + version)
-    return self.skipWaiting()
+    //return self.skipWaiting()
 })
+
+self.addEventListener("fetch", () {
+    //met en écoute le service
+} )
