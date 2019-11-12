@@ -34,6 +34,9 @@ if (workbox) {
         {
             "url": "favicon.ico"
         },
+        {
+            "url": "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+        },
     ])
 
     // On lui demande de rajouter des stratégies de cache
