@@ -40,8 +40,6 @@ a:hover{
     margin-top: 1rem;
 }
 .install{
-    position: fixed;
-    z-index: 1;
     width: 100%;
 }
 .hidden{
