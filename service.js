@@ -43,7 +43,7 @@ if (workbox) {
     workbox.routing.registerRoute(
         /\.(?:png|gif|jpg|jpeg|svg|css|js)$/,
         new workbox.strategies.CacheFirst({
-          cacheName: 'design',
+          cacheName: "design",
           plugins: [
             new workbox.expiration.Plugin({
               maxEntries: 60,
@@ -53,6 +53,19 @@ if (workbox) {
         }),
       );
 
-  } else {
+    workbox.routing.registerRoute(
+        "https://api.irail.be/stations/?format=json",
+        new workbox.strategies.NetworkFirst({
+            cacheName: "api-cache",
+            plugins: [
+                new workbox.expiration.Plugin({
+                  maxEntries: 60,
+                  maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+                }),
+            ],
+        })
+    )
+
+    } else {
     console.log(`Boo! Workbox didn't load 😬`);
-  }
+}
