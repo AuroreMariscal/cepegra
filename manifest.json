@@ -1,7 +1,7 @@
 {
-    "short_name": "Sncb",
+    "short_name": "Cepegra",
     "version": 1.00,
-    "name": "Trains au départ",
+    "name": "Ma pwa",
     "display": "standalone",
     "start_url": "/",
     "orientation": "portrait",
