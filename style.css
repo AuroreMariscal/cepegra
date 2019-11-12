@@ -16,5 +16,10 @@ a:hover{
     color: darkslategray;
 }
 li::before{
-    content: ">";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 1rem;
+    color: forestgreen;
+    content: "\f00c";
+    margin-right: 0.5rem;
 }
